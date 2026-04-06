@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cloud Architect Simulator™</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>☁️ Cloud Architect Simulator™</h1>
+<p class="tagline">Now With 0% Purpose</p>
+
+<div class="controls">
+  <button onclick="deploy()">🚀 Deploy App</button>
+  <button onclick="scale()">📈 Auto Scale</button>
+  <button onclick="optimize()">🧠 Optimize with AI</button>
+  <button onclick="brew()">☕ Brew Coffee API</button>
+  <button class="danger" onclick="deleteProd()">🔥 Delete Production</button>
+</div>
+
+<div class="selectors">
+  <label>Region:</label>
+  <select onchange="changeRegion(this.value)">
+    <option>US-East</option>
+    <option>Europe-West</option>
+    <option>Asia-Pacific</option>
+    <option>Mars (Beta)</option>
+    <option>Your Neighbor's WiFi</option>
+    <option>Some Guy's Laptop</option>
+  </select>
+</div>
+
+<div class="dashboard">
+  <p id="status">Status: Idle</p>
+  <p id="pods">Pods: 0</p>
+  <p id="cpu">CPU Usage: 0%</p>
+  <p id="bill">Billing: $0.00</p>
+  <p id="users">Active Users: 0</p>
+</div>
+
+<div id="logs"></div>
+
+</body>
+<script src="script.js"></script>
+</html>
